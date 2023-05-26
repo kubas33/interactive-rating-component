@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+:root {
+    --primary-orange: hsl(25, 97%, 53%);
+    --neutral-white: hsl(0, 0%, 100%);
+    --neutral-light-gray: hsl(217, 12%, 63%);
+    --neutral-medium-gray: hsl(216, 12%, 54%);
+    --neutral-dark-blue: hsl(213, 19%, 18%);
+    --neutral-very-dark-blue: hsl(216, 12%, 8%);
+    --fw-normal: 400;
+    --fw-bold: 700;
+    font-size: 15px;
+    font-family: 'Overpass', sans-serif;
+    background-color:black;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: grid;
+    place-content: center;
+    height: 100lvh;
+    color: var(--neutral-light-gray);
+}
+
+#rating-state, #thank-you-state {
+    width: 90lvw;
+    max-width: 375px;
+    background-color: var(--neutral-dark-blue);
+    color: var(--neutral-light-gray);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    padding: 35px 25px;
+}
+
+#thank-you-state{
+    display: none;
+    text-align: center;
+    justify-content: center;
+}
+.rate-circle {
+    border-radius: 50%;
+    background-color:hsla(213, 23%, 26%, 0.9);
+    max-width: 40px;
+    width: 40px;
+    aspect-ratio: 1 /1 ;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.rate-circle img {
+    max-width: 15px;
+    height: auto;
+}
+
+h1 {
+    color: var(--neutral-white);
+    font-size: 1.9rem;
+    margin: 5px 0;
+    padding: 15px 0;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    min-width: 100%;
+    padding: 20px 0;
+}
+
+.rating-cont li:hover {
+    background-color: var(--primary-orange);
+    cursor: pointer;
+    color: white;
+}
+
+.rating-cont li.checked {
+    background-color: var(--neutral-light-gray);
+    color: white;
+}
+
+.submit {
+    min-height: 45px;
+    background-color: var(--primary-orange);
+    border-radius: 22px;
+    border: none;
+    color: white;
+    font-weight: var(--fw-bold);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.submit:hover {
+    background-color: white;
+    color: var(--primary-orange);
+}
+
+#thank-you-state {
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+
+}
+
+.selected-rate-cont {
+    color:var(--primary-orange);
+    background-color:hsla(213, 23%, 26%, 0.9);
+    padding: 5px 10px;
+    border-radius: 15px;
+    align-content: center;
+    max-width: max-content;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+#thank-you-state h2 {
+    color: var(--neutral-white);
+    margin: 30px auto 20px;
+}
